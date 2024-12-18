@@ -1,0 +1,41 @@
+:root {
+    --principal: #FEFAE0;
+    --secundario: #FAEDCD;
+    --cafe: #D4A373;
+    --verde: #CCD5AE;
+    --verdeClaro: #E9EDC9;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-snap-type: y mandatory;
+}
+  /* Scroll snap. */
+.servicios,
+.navegacion-principal,
+.formulario {
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+body {
+    font-size: 16px; /* 1rem = 10 px*/
+    font-family: "Krub", sans-serif;
+    /* Degradado de fondo. */
+    background-image: linear-gradient(
+      to top,
+      var(--grisClaro) 0%,
+      var(--blanco) 100%
+    ); /* Primero le colocamos de donde va a comenzar la direccion del degradado (en este caso va a ir de arriba hacia abajo). */
+  }
+
+  .encabezado {
+    background-color: var(--cafe);
+  }
+
+  

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyecto API</title>
+    <style>
+      :root {
+        --blanco: #ffffe0;
+        --negro: #000;
+        --cafe: #ffc694;
+        --ama1: #ffffa3;
+        --ama2: #ffe761;
+        --ama3: #fcd762;
+      }
+
+      body {
+        background-color: var(--blanco);
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      .encabezado {
+        background-color: #bfc540;
+        text-align: center;
+        padding: 15px 0;
+      }
+
+      .encabezado__titulo {
+        font-size: 30px;
+        text-transform: uppercase;
+        color: #fff;
+        background-color: #bfc540;
+        margin: 0;
+      }
+
+      .contenedor {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        padding: 20px;
+      }
+
+      .card {
+        background-color: var(--negro);
+        color: var(--negro);
+        width: 250px;
+        border-radius: 10px;
+        box-shadow: 0px 5px 15px rgba(112, 112, 112, 0.5);
+        overflow: hidden;
+        text-align: center;
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+
+      .card:hover {
+        transform: scale(1.05);
+        box-shadow: 0px 8px 20px rgba(112, 112, 112, 0.7);
+      }
+
+      .card__content {
+        color: var(--blanco);
+        padding: 20px;
+        background-color: var(--ama3);
+      }
+
+      .card__title {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: var(#fff);
+      }
+
+      .card__button {
+        display: inline-block;
+        background-color: var(--ama1);
+        color: var(--negro);
+        padding: 10px 20px;
+        text-transform: uppercase;
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s, color 0.3s;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="encabezado">
+      <h2 class="encabezado__titulo">Algoritmos de ML</h2>
+    </header>
+
+    <main class="contenedor">
+      <div class="card">
+        <div class="card__content">
+          <h3 class="card__title">Regresion Lineal</h3>
+          <a href="Notebooks/04_Regresión_Lineal.ipynb" class="card__button"
+            >Abrir</a
+          >
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card__content">
+          <h3 class="card__title">Creación de Transformadores</h3>
+          <a
+            href="Notebooks/3501_Creacion-de-transformadores-y-pipelines-personalizados.ipynb"
+            class="card__button"
+            >Abrir</a
+          >
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card__content">
+          <h3 class="card__title">Evaluación de Resultados</h3>
+          <a
+            href="Notebooks/3501_Evaluacion_de_Resultados.ipynb"
+            class="card__button"
+            >Abrir</a
+          >
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card__content">
+          <h3 class="card__title">Preparacion del DataSet</h3>
+          <a
+            href="Notebooks/3501_Preparacion_del_DataSet.ipynb"
+            class="card__button"
+            >Abrir</a
+          >
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card__content">
+          <h3 class="card__title">Regresion Logistica</h3>
+          <a
+            href="Notebooks/3501_Regresion_Logistica.ipynb"
+            class="card__button"
+            >Abrir</a
+          >
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card__content">
+          <h3 class="card__title">Support Vector Machine</h3>
+          <a
+            href="Notebooks/3501_Suport_Vector_Maquine.ipynb"
+            class="card__button"
+            >Abrir</a
+          >
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card__content">
+          <h3 class="card__title">Visualizacion de Datos</h3>
+          <a
+            href="Notebooks/3501_Visualizaciòn-de-datos.ipynb"
+            class="card__button"
+            >Abrir</a
+          >
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
