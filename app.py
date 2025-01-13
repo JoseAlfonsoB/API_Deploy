@@ -8,9 +8,9 @@ app = Flask(__name__)
     # ----COMANDOS----
 # Crear un ambiente virtual: python -m venv venv
 # Inicializar el ambiente virtual: source venv/bin/activate 
-# Desactivar el ambiente virtual. deactivate
+# Desactivar el ambiente virtual: deactivate
 # Arrancar el servicio: python app.py
-# Detener el servicio. Ctrl + C
+# Detener el servicio: Ctrl + C
 
 # Carpeta donde están los notebooks
 NOTEBOOK_FOLDER = os.path.join(os.getcwd(), 'Notebooks')
