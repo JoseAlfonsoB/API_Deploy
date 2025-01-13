@@ -1,5 +1,4 @@
 flask
 nbformat
 nbconvert
-io
 gunicorn
