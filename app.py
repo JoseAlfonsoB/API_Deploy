@@ -105,6 +105,14 @@ def view_notebook(filename):
                         img_tag = f'<img src="data:image/png;base64,{image_data}" alt="Graph" />'
                         outputs.append(img_tag)
 
+        # Si es el notebook "3501ArboldeDesicion.ipynb", agregar la imagen del árbol de decisión
+        if filename == "3501ArboldeDesicion.ipynb":
+            decision_tree_img_path = os.path.join(os.getcwd(), "templates", "Arbol_de_decision.png")
+            if os.path.exists(decision_tree_img_path):
+                with open(decision_tree_img_path, "rb") as image_file:
+                    encoded_string = base64.b64encode(image_file.read()).decode('utf-8')
+                    outputs.append(f'<img src="data:image/png;base64,{encoded_string}" alt="Decision Tree Graph" />')
+
         return "<br>".join(outputs)
     except Exception as e:
         abort(500, description=f"Error al procesar el notebook: {str(e)}")
